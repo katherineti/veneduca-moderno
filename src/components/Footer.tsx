@@ -66,29 +66,25 @@ const Footer = () => {
             <div className="flex space-x-4 pt-4">
               <Button
                 size="icon"
-                variant="outline"
-                className="border-veneduca-light/20 text-veneduca-light hover:bg-veneduca-red hover:border-veneduca-red"
+                className="bg-veneduca-light/10 border border-veneduca-light/30 text-veneduca-light hover:bg-veneduca-red hover:border-veneduca-red transition-colors"
               >
                 <Facebook className="h-4 w-4" />
               </Button>
               <Button
                 size="icon"
-                variant="outline"
-                className="border-veneduca-light/20 text-veneduca-light hover:bg-veneduca-red hover:border-veneduca-red"
+                className="bg-veneduca-light/10 border border-veneduca-light/30 text-veneduca-light hover:bg-veneduca-red hover:border-veneduca-red transition-colors"
               >
                 <Instagram className="h-4 w-4" />
               </Button>
               <Button
                 size="icon"
-                variant="outline" 
-                className="border-veneduca-light/20 text-veneduca-light hover:bg-veneduca-red hover:border-veneduca-red"
+                className="bg-veneduca-light/10 border border-veneduca-light/30 text-veneduca-light hover:bg-veneduca-red hover:border-veneduca-red transition-colors"
               >
                 <Twitter className="h-4 w-4" />
               </Button>
               <Button
                 size="icon"
-                variant="outline"
-                className="border-veneduca-light/20 text-veneduca-light hover:bg-veneduca-red hover:border-veneduca-red"
+                className="bg-veneduca-light/10 border border-veneduca-light/30 text-veneduca-light hover:bg-veneduca-red hover:border-veneduca-red transition-colors"
               >
                 <Linkedin className="h-4 w-4" />
               </Button>

@@ -13,6 +13,14 @@ import { Menu, X, ChevronDown, Phone, Mail, Facebook, Instagram } from "lucide-r
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <header className="bg-veneduca-light shadow-soft sticky top-0 z-50">
       {/* Top Bar */}
@@ -72,7 +80,10 @@ const Header = () => {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuLink className="text-veneduca-dark hover:text-veneduca-red cursor-pointer">
+                <NavigationMenuLink 
+                  className="text-veneduca-dark hover:text-veneduca-red cursor-pointer"
+                  onClick={() => scrollToSection('programs')}
+                >
                   Servicios
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -121,7 +132,10 @@ const Header = () => {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuLink className="text-veneduca-dark hover:text-veneduca-red cursor-pointer">
+                <NavigationMenuLink 
+                  className="text-veneduca-dark hover:text-veneduca-red cursor-pointer"
+                  onClick={() => scrollToSection('news')}
+                >
                   Noticias
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -139,7 +153,7 @@ const Header = () => {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Button className="bg-veneduca-red hover:bg-veneduca-red/90 text-veneduca-light">
+                <Button className="bg-white hover:bg-veneduca-gray text-veneduca-dark border border-veneduca-dark hover:text-veneduca-red">
                   Contáctenos
                 </Button>
               </NavigationMenuItem>
@@ -164,7 +178,11 @@ const Header = () => {
               <Button variant="ghost" className="justify-start">
                 Universidad <ChevronDown className="ml-auto h-4 w-4" />
               </Button>
-              <Button variant="ghost" className="justify-start">
+              <Button 
+                variant="ghost" 
+                className="justify-start"
+                onClick={() => scrollToSection('programs')}
+              >
                 Servicios
               </Button>
               <Button variant="ghost" className="justify-start">
@@ -176,7 +194,11 @@ const Header = () => {
               <Button variant="ghost" className="justify-start">
                 Diplomados y Cursos
               </Button>
-              <Button variant="ghost" className="justify-start">
+              <Button 
+                variant="ghost" 
+                className="justify-start"
+                onClick={() => scrollToSection('news')}
+              >
                 Noticias
               </Button>
               <Button variant="ghost" className="justify-start">
@@ -185,7 +207,7 @@ const Header = () => {
               <Button variant="ghost" className="justify-start">
                 Apoyo al Estudiante
               </Button>
-              <Button className="bg-veneduca-red hover:bg-veneduca-red/90 text-veneduca-light w-full">
+              <Button className="bg-white hover:bg-veneduca-gray text-veneduca-dark border border-veneduca-dark hover:text-veneduca-red w-full">
                 Contáctenos
               </Button>
             </div>
