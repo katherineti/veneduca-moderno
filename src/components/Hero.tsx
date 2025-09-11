@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BookOpen, Users, Award } from "lucide-react";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen bg-gradient-veneduca overflow-hidden">
+  return <section className="relative min-h-screen bg-gradient-veneduca overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-32 h-32 border border-veneduca-light rounded-full"></div>
@@ -32,18 +30,11 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="bg-veneduca-red hover:bg-veneduca-red/90 text-veneduca-light hover-glow group"
-              >
+              <Button size="lg" className="bg-veneduca-red hover:bg-veneduca-red/90 text-veneduca-light hover-glow group">
                 Conoce Nuestros Programas
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-veneduca-light text-veneduca-light hover:bg-veneduca-light hover:text-veneduca-dark"
-              >
+              <Button size="lg" variant="outline" className="border-veneduca-light hover:bg-veneduca-light text-zinc-950">
                 Contáctanos
               </Button>
             </div>
@@ -107,8 +98,6 @@ const Hero = () => {
           <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"></path>
         </svg>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
