@@ -57,6 +57,24 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        veneduca: {
+          dark: "hsl(var(--veneduca-dark))",
+          red: "hsl(var(--veneduca-red))",
+          light: "hsl(var(--veneduca-light))",
+          gray: "hsl(var(--veneduca-gray))",
+          "dark-gray": "hsl(var(--veneduca-dark-gray))",
+        },
+      },
+      backgroundImage: {
+        "gradient-veneduca": "var(--gradient-hero)",
+        "gradient-card": "var(--gradient-card)",
+        "gradient-primary": "var(--gradient-primary)",
+      },
+      boxShadow: {
+        soft: "var(--shadow-soft)",
+        medium: "var(--shadow-medium)",
+        strong: "var(--shadow-strong)",
+        red: "var(--shadow-red)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +98,19 @@ export default {
             height: "0",
           },
         },
+        float: {
+          "0%, 100%": {
+            transform: "translateY(0px)",
+          },
+          "50%": {
+            transform: "translateY(-10px)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        float: "float 3s ease-in-out infinite",
       },
     },
   },
