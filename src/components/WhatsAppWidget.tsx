@@ -7,7 +7,7 @@ const WhatsAppWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleSendMessage = (message: string) => {
-    const phoneNumber = "584241587708"; // VenEduca phone number
+    const phoneNumber = "584122284017"; // VenEduca phone number
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
